@@ -122,7 +122,7 @@ function areaTriangulo(){
 
 function areaCirculo(){
     let r = document.getElementById('radio').value
-    let result = Math.round(Math.PI * (parseInt(r)* parseInt(r)))
+    let result = Math.fround(Math.PI * (parseInt(r)* parseInt(r)))
 
     let textResult = document.createElement('input')
     let mensaje =document.createElement('p')
@@ -150,7 +150,7 @@ function areaCirculo(){
 
 function perimetroCirculo(){
     let r = document.getElementById('radio').value
-    let result = Math.round(2*Math.PI * parseInt(r))
+    let result = Math.fround(2*Math.PI * parseInt(r))
 
     let textResult = document.createElement('input')
     let mensaje =document.createElement('p')

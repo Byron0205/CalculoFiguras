@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>figuras geometricas</title>
+<!-- Enlaces a los archivos CSS de Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<style>
+    .card{
+        max-width: 400px;
+    }
+</style>
+</head>
+<body>
+<!-- Contenido de la página -->
+<div class="container mt-4">
+    <div class="row mx-auto">
+        <div class="card-deck">
+                <div class="card d-flex">
+                    <div class="card-body text-center" id="cuadrado">
+                        <h2 class="card-title">Cuadrado</h2>
+                        <p class="card-text">Cuanto mide cada lado del cuadrado</p>
+                        <input type="number" id="ladoCuadrado" class="form-control mb-2 mt-2" placeholder="Ingrese lados">
+                        <button type="submit" onclick="perimetroCuadrado()" class="btn btn-primary mx-auto ">Perimetro</button>
+                        <button type="submit" onclick="areaCuadrado()" class="btn btn-primary mx-auto">Area</button>
+                    </div>
+                    
+                </div>
+                
+                <div class="card d-flex">
+                    <div class="card-body text-center">
+                        <h2 class="card-title">Triangulo</h2>
+                        <div id="triangulo1">
+                            <p class="card-text">Cuanto mide cada lado del triangulo</p>
+                            <input type="number" name="lados" id="tri1" placeholder="Ingrese lado 01" class="form-control mt-2 mb-2">
+                            <input type="number" name="lados" id="tri2" placeholder="Ingrese lado 02" class="form-control mt-2 mb-2">
+                            <input type="number" name="lados" id="tri3" placeholder="Ingrese lado 03" class="form-control mt-2 mb-2">
+                            <button type="submit" onclick="perimetroTriangulo()" class="btn btn-primary mx-auto">Perimetro</button>
+                        </div>
+                        
+                        <div id="triangulo2">
+                            <p class="card-text mt-4">
+                                Cuanto mide la base y altura del triangulo
+                            </p>
+                            <input type="number" id="base" class="form-control mt-2 mb-2" placeholder="Ingrese base">
+                            <input type="number" id="altura" class="form-control mt-2 mb-2" placeholder="Ingrese altura">
+                            <button type="submit" onclick="areaTriangulo()" class="btn btn-primary">Area</button>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+                <div class="card d-flex">
+                    <div class="card-body text-center" id="circulo">
+                        <h2 class="card-title">Circulo</h2>
+                        <p class="card-text">Cuanto mide el radio del circulo</p>
+                        <input type="number" name="lados" id="radio" placeholder="Ingrese radio" class="form-control mt-2 mb-2">
+                            <button type="submit" onclick="diametro()" class="btn btn-primary">Diametro</button>
+                            <button type="submit" onclick="perimetroCirculo()" class="btn btn-primary">Perimetro</button>
+                            <button type="submit" onclick="areaCirculo()" class="btn btn-primary">Area</button>
+                    </div>
+                    
+                </div>
+        </div>
+    </div>
+</div>
+
+<!-- Enlaces a los archivos JS de Bootstrap -->
+<script src="js/operaciones.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

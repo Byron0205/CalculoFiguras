@@ -122,7 +122,7 @@ function areaTriangulo(){
 
 function areaCirculo(){
     let r = document.getElementById('radio').value
-    let result = Math.fround(Math.PI * (parseInt(r)* parseInt(r)))
+    let result = Math.PI * (parseInt(r)* parseInt(r))
 
     let textResult = document.createElement('input')
     let mensaje =document.createElement('p')
@@ -136,7 +136,7 @@ function areaCirculo(){
     textResult.classList.add('form-control')
     textResult.classList.add('mb-2')
     textResult.classList.add('mt-2')
-    textResult.value= result
+    textResult.value= result.toFixed(2)
 
     if (!document.getElementById('txtResultado4') && !document.getElementById('resultado4')){
     document.getElementById('circulo').append(mensaje)
@@ -150,7 +150,7 @@ function areaCirculo(){
 
 function perimetroCirculo(){
     let r = document.getElementById('radio').value
-    let result = Math.fround(2*Math.PI * parseInt(r))
+    let result = 2*Math.PI * parseInt(r)
 
     let textResult = document.createElement('input')
     let mensaje =document.createElement('p')
@@ -164,7 +164,7 @@ function perimetroCirculo(){
     textResult.classList.add('form-control')
     textResult.classList.add('mb-2')
     textResult.classList.add('mt-2')
-    textResult.value= result
+    textResult.value= result.toFixed(2)
 
     if (!document.getElementById('txtResultado4') && !document.getElementById('resultado4')){
     document.getElementById('circulo').append(mensaje)
